@@ -262,7 +262,10 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-#Treble
+# Timeservice
+BOARD_USES_QC_TIME_SERVICES := true
+
+# Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
 ENABLE_VENDOR_IMAGE := true
