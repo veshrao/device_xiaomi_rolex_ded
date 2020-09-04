@@ -143,6 +143,19 @@ wifi.interface=wlan0
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true \
-    ro.vendor.qti.sys.fw.bservice_limit=5 \
-    ro.vendor.qti.sys.fw.bservice_age=5000
+ro.vendor.qti.sys.fw.bservice_enable=true \
+ro.vendor.qti.sys.fw.bservice_limit=5 \
+ro.vendor.qti.sys.fw.bservice_age=5000
+
+# Framework boost
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.iop.enable_iop=1 \
+ro.vendor.at_library=true \
+vendor.iop.enable_uxe=1 \
+vendor.perf.iop_v3.enable=true \
+vendor.perf.iop_v3.enable.debug=false \
+vendor.enable.prefetch=false \
+vendor.iop.enable_prefetch_ofr=false \
+vendor.perf.gestureflingboost.enable=true \
+vendor.perf.workloadclassifier.enable=true
+
