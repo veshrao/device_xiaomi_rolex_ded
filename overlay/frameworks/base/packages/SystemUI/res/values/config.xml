@@ -21,9 +21,6 @@
 
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">true</bool>
-
-    <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
-    <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
     
     <!-- Default no. of QS tile rows and columns -->
     <integer name="config_qs_columns_portrait">4</integer>
