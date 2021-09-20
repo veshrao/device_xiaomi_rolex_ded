@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_rolex.mk
+    $(LOCAL_DIR)/banana_rolex.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_rolex-user \
-    revengeos_rolex-userdebug \
-    revengeos_rolex-eng
+    banana_rolex-user \
+    banana_rolex-userdebug \
+    banana_rolex-eng
