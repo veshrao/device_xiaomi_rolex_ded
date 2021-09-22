@@ -49,7 +49,7 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOOTLOADER_BOARD_NAME 	:= msm8937
 TARGET_NO_BOOTLOADER 		:= true
 
-# kernel
+# Kernel
 BOARD_KERNEL_BASE		:= 0x80000000
 BOARD_KERNEL_CMDLINE 		:= console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 androidboot.usbconfigfs=false loop.max_part=7
 BOARD_KERNEL_IMAGE_NAME 	:= Image.gz-dtb
@@ -59,10 +59,12 @@ TARGET_KERNEL_CONFIG 		:= mi8937_defconfig
 TARGET_KERNEL_SOURCE 		:= kernel/xiaomi/msm8937
 TARGET_KERNEL_VERSION         := 4.9
 TARGET_KERNEL_CLANG_COMPILE     := true
+TARGET_EXFAT_DRIVER		:= sdfat
+
+# Kernel (Misc)
 ifneq ($(wildcard vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0),)
 TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0
 endif
-TARGET_EXFAT_DRIVER		:= sdfat
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
