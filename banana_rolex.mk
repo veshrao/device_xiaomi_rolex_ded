@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common BananaDroid stuff
+# Inherit some common BananaDroidOS stuff
 $(call inherit-product, vendor/banana/config/common.mk)
 GAPPS_VERSION := true
 TARGET_GAPPS_ARCH := arm64
