@@ -61,7 +61,7 @@ TARGET_KERNEL_VERSION         := 4.9
 TARGET_KERNEL_CLANG_COMPILE     := true
 TARGET_EXFAT_DRIVER		:= sdfat
 
-# Kernel (Misc)
+# Kernel (Compiler)
 ifneq ($(wildcard vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0),)
 TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0
 endif
@@ -242,7 +242,7 @@ BOARD_POWER_CUSTOM_BOARD_LIB := libpower_8937
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop.mk
 
 # QCOM support
 BOARD_USES_QCOM_HARDWARE := true
